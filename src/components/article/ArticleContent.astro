@@ -1,0 +1,80 @@
+---
+import one from "/public/images/artikel1.jpg";
+import two from "/public/images/artikel2.webp";
+import three from "/public/images/artikel3.jpg";
+import four from "/public/images/artikel4.jpg";
+import { Image } from "@astrojs/image/components";
+---
+
+<main role="main" class="w-full lg:col-span-3">
+  <section>
+    <div class="p-8 lg:py-12 lg:px-10">
+      <div
+        class="text-base dark:text-zinc-500 text-zinc-500 lg:col-span-3 space-y-12"
+      >
+        <article class="md:grid md:grid-cols-4">
+          <div class="md:col-span-3">
+            <header class="flex flex-col">
+              <h1
+                class="mt-6 text-4xl font-bold tracking-tight text-black dark:text-white sm:text-5xl"
+              >
+                Manga nggateli yang bikin cengar cengir.
+              </h1>
+              <time
+                datetime="2022-09-05"
+                class="order-first flex items-center text-base text-zinc-500 dark:text-zinc-400"
+              >
+                <span>May 28, 2023</span>
+              </time>
+            </header>
+            <div class="mt-8 prose dark:prose-invert prose-zinc">
+              <p>
+                nah ini manga yang gak tau kenapa bikin cengar cengir tiap baca
+                tiap chapter nya,ceritanya yang seru terus rommance yang
+                menggoda bikin ni manga tak jadiin rating 10 / 10 deh
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="aspect-[280/200] rounded-lg overflow-hidden">
+                  <Image class="object-cover h-full" src={one} alt="#" />
+                </div>
+                <div class="aspect-[280/200] rounded-lg overflow-hidden">
+                  <Image class="object-cover h-full" src={two} alt="#" />
+                </div>
+                <div class="aspect-[280/200] rounded-lg overflow-hidden">
+                  <Image class="object-cover h-full" src={three} alt="#" />
+                </div>
+                <div class="aspect-[280/200] rounded-lg overflow-hidden">
+                  <Image class="object-cover h-full" src={four} alt="#" />
+                </div>
+              </div>
+              <h2>Review manga Ase to Sekken</h2>
+              <p>nih baca aja dulu aja dah sinopsis nya.</p>
+              <blockquote>
+                Asako Yaeshima adalah seorang gadis pemalu yang bekerja pada
+                Lilia Drop. Lilia Drop adalah sebuah perusahaan yang berpusat
+                pada kebutuhan higenis. Contohnya seperti sabun mandi, shampoo,
+                dll. Dia bekerja di Lilia Drop karena dia malu akan dirinya yang
+                sering berkeringat dan bau badannya. Dan hanya sabun dari Lilia
+                Drop yang bisa menghilangkan kecemasannya akan hal-hal itu.
+                Namun saat dia bertemu pengembang produk utama perusahaan,
+                Kotaro Naori. Kotaro mencium wangi unik dari Asako dan jatuh
+                cinta dengan baunya. Bau Asako memberikannya inspirasi untuk
+                menciptakan produk-produk baru. Semakin sering mereka bertemu
+                semakin jatuh cintalah mereka satu dengan yang lain.
+              </blockquote>
+              <h2>COK CERITA NYA BIKIN CENGAR CENGIR</h2>
+              <p>
+                Sekali lagi ni ya ni manga bikin cengar cengir,tapi saran ku
+                mending baca yang versi inggrisnya karena lebih lengkap dan gak
+                kepotong potong,balik lagi ke manga ini bisa di jadikan contoh
+                hubungan yang sportif lho,hubungan yang terbuka gini bikin
+                hubungan jadi lebih langgeng lho,terus juga art nya expresif
+                banget yang bikin vanila enjoyer me wangi wangi kan ni manga.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>

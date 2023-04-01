@@ -1,0 +1,32 @@
+---
+import twenty from "/public/images/photo1.png";
+import { Image } from "@astrojs/image/components";
+---
+
+<main role="main" class="w-full lg:col-span-3">
+  <section>
+    <div class="grid grid-cols-1 xl:grid-cols-2 gap-x-3 gap-y-12 p-4">
+      <div>
+        <div class="aspect-[280/200] bg-zinc-100 rounded-xl overflow-hidden">
+          <Image class="object-cover h-full" src={twenty} alt="#" />
+        </div>
+        <div>
+          <div class="inline-flex items-center justify-between w-full px-4">
+            <div>
+              <h2
+                class="text-base font-semibold text-black dark:text-white mt-8 relative"
+              >
+                The Rogue Price
+              </h2>
+              <p
+                class="relative z-10 mt-2 text-sm text-zinc-500 dark:text-zinc-400"
+              >
+                Adobe Ilustrator
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
